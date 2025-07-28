@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class WikipediaView extends StatefulWidget {
+class WikiWebView extends StatefulWidget {
   final String title;
   final String url;
 
-  const WikipediaView({
+  const WikiWebView({
     super.key,
     required this.title,
     required this.url,
   });
 
   @override
-  State<WikipediaView> createState() => _WikipediaViewState();
+  State<WikiWebView> createState() => _WikiWebViewState();
 }
 
-class _WikipediaViewState extends State<WikipediaView> {
+class _WikiWebViewState extends State<WikiWebView> {
   late final WebViewController controller;
   bool isLoading = true;
 
