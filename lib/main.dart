@@ -3,12 +3,16 @@ import 'package:flutter_web_frame/flutter_web_frame.dart';
 import 'package:provider/provider.dart';
 import 'routes/app_router.dart';
 import 'providers/theme_provider.dart';
+import 'providers/cat_provider.dart';
 import 'theme/app_theme.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => ThemeProvider(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => CatProvider()),
+      ],
       child: const MyApp(),
     ),
   );
