@@ -1,16 +1,27 @@
 # xpert_group_demo
 
-A new Flutter project.
+Aplicación de prueba para el cargo de Desarrollador FullStack Flutter y Java en XpertGroup.
 
-## Getting Started
+## Características
 
-This project is a starting point for a Flutter application.
+[x] Lista de razas de gatos
+[x] Votación de razas
+[x] WebView para ver la política de privacidad y la ayuda y soporte
+[x] Tema oscuro y claro
+[x] Caché de las razas de gatos
+[x] Caché de las imágenes de las razas de gatos
+[x] Caché de las imágenes de los votos
 
-A few resources to get you started if this is your first Flutter project:
+## Instalación
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clonar el repositorio
+2. Ejecutar `flutter pub get`
+3. Ejecutar `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Licencia
+
+[MIT](https://opensource.org/licenses/MIT)
+
+## Autor
+
+[Paul Osinga](https://github.com/paulpwo)
