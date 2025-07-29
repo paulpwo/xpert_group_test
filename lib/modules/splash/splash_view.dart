@@ -55,8 +55,8 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
                 Lottie.asset(
                   'assets/lotties/cat.json',
                   controller: _animationController,
-                  width: 200,
-                  height: 200,
+                  width: 350,
+                  height: 350,
                   fit: BoxFit.contain,
                 ),
                 const SizedBox(height: 20),
@@ -66,17 +66,6 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: Theme.of(context).colorScheme.primary,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  'Cargando...',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Theme.of(context)
-                        .colorScheme
-                        .onSurface
-                        .withValues(alpha: 0.6),
                   ),
                 ),
               ],
