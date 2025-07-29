@@ -59,7 +59,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
                   height: 350,
                   fit: BoxFit.contain,
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 Text(
                   'Xpert Group Demo',
                   style: TextStyle(
