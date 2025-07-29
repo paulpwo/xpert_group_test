@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../constants/routes.dart';
-import '../views/splash_view.dart';
-import '../views/main_view.dart';
-import '../views/home_view.dart';
-import '../views/settings_view.dart';
+import '../modules/main/main_view.dart';
+import '../modules/splash/splash_view.dart';
+import '../modules/main/home/home_view.dart';
+import '../modules/main/settings/settings_view.dart';
+import '../modules/main/voting/voting_view.dart';
+import '../views/wikipedia_view.dart';
 
 class AppRouter {
   static GoRouter get router => GoRouter(
@@ -29,6 +31,27 @@ class AppRouter {
                 path: 'settings',
                 name: 'settings',
                 builder: (context, state) => const SettingsView(),
+                routes: [
+                  GoRoute(
+                    path: 'webview',
+                    name: 'webview',
+                    builder: (context, state) {
+                      final Map<String, String>? params =
+                          state.extra as Map<String, String>?;
+                      final title = params?['title'] ?? '';
+                      final url = params?['url'] ?? '';
+                      return WikiWebView(
+                        title: title,
+                        url: url,
+                      );
+                    },
+                  ),
+                ],
+              ),
+              GoRoute(
+                path: 'voting',
+                name: 'voting',
+                builder: (context, state) => const VotingView(),
               ),
             ],
           ),
