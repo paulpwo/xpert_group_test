@@ -4,13 +4,13 @@ Aplicación de prueba para el cargo de Desarrollador FullStack Flutter y Java en
 
 ## Características
 
-[x] Lista de razas de gatos
-[x] Votación de razas
-[x] WebView para ver la política de privacidad y la ayuda y soporte
-[x] Tema oscuro y claro
-[x] Caché de las razas de gatos
-[x] Caché de las imágenes de las razas de gatos
-[x] Caché de las imágenes de los votos
+- [x] Lista de razas de gatos
+- [x] Votación de razas
+- [x] WebView para ver la política de privacidad y la ayuda y soporte
+- [x] Tema oscuro y claro
+- [x] Caché de las razas de gatos
+- [x] Caché de las imágenes de las razas de gatos
+- [x] Caché de las imágenes de los votos
 
 ## Instalación
 
