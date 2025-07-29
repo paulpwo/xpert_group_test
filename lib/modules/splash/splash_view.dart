@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import '../../constants/routes.dart';
+import '../../routes/routes.dart';
 import '../../providers/theme_provider.dart';
 
 class SplashView extends StatefulWidget {
@@ -19,7 +19,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _animationController = AnimationController(
-      duration: const Duration(seconds: 5),
+      duration: const Duration(seconds: 1),
       vsync: this,
     );
 

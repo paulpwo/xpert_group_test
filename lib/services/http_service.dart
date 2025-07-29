@@ -64,7 +64,13 @@ class HttpService {
     ));
   }
 
-  // Métodos HTTP con retry automático
+  /// Método GET con retry automático
+  /// [path] - La ruta de la API
+  /// [queryParameters] - Parámetros de la consulta
+  /// [options] - Opciones de la petición
+  /// [cancelToken] - Token de cancelación
+  /// [onReceiveProgress] - Callback para recibir el progreso de la respuesta
+  /// [cachePolicy] - Política de caché
   Future<Response<T>> get<T>(
     String path, {
     Map<String, dynamic>? queryParameters,
@@ -91,6 +97,12 @@ class HttpService {
     );
   }
 
+  /// Método POST con retry automático
+  /// [path] - La ruta de la API
+  /// [data] - Datos a enviar
+  /// [queryParameters] - Parámetros de la consulta
+  /// [options] - Opciones de la petición
+  /// [cancelToken] - Token de cancelación
   Future<Response<T>> post<T>(
     String path, {
     dynamic data,
@@ -111,6 +123,12 @@ class HttpService {
     );
   }
 
+  /// Método PUT con retry automático
+  /// [path] - La ruta de la API
+  /// [data] - Datos a enviar
+  /// [queryParameters] - Parámetros de la consulta
+  /// [options] - Opciones de la petición
+  /// [cancelToken] - Token de cancelación
   Future<Response<T>> put<T>(
     String path, {
     dynamic data,
@@ -131,6 +149,12 @@ class HttpService {
     );
   }
 
+  /// Método DELETE con retry automático
+  /// [path] - La ruta de la API
+  /// [data] - Datos a enviar
+  /// [queryParameters] - Parámetros de la consulta
+  /// [options] - Opciones de la petición
+  /// [cancelToken] - Token de cancelación
   Future<Response<T>> delete<T>(
     String path, {
     dynamic data,
@@ -147,27 +171,29 @@ class HttpService {
     );
   }
 
-  // Método para configurar el token de autorización
+  /// Método para configurar el token de autorización
+  /// [token] - El token de autorización
   void setAuthToken(String token) {
     _dio.options.headers['Authorization'] = 'Bearer $token';
   }
 
-  // Método para limpiar el token de autorización
+  /// Método para limpiar el token de autorización
   void clearAuthToken() {
     _dio.options.headers.remove('Authorization');
   }
 
-  // Método para configurar la URL base
+  /// Método para configurar la URL base
+  /// [baseUrl] - La URL base
   void setBaseUrl(String baseUrl) {
     _dio.options.baseUrl = baseUrl;
   }
 
-  // Método para limpiar el caché
+  /// Método para limpiar el caché
   Future<void> clearCache() async {
     await MemCacheStore().clean();
   }
 
-  // Getter para acceder a la instancia de Dio directamente si es necesario
+  /// Getter para acceder a la instancia de Dio directamente si es necesario
   Dio get dio => _dio;
 }
 

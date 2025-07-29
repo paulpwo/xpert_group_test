@@ -17,7 +17,7 @@ class CatApiService {
     _httpService.setAuthToken(_apiKey);
   }
 
-  // Obtener todas las razas de gatos
+  /// Obtener todas las razas de gatos
   Future<List<CatBreed>> getBreeds() async {
     try {
       final response = await _httpService.get('/breeds');
@@ -34,7 +34,9 @@ class CatApiService {
     }
   }
 
-  // Obtener imágenes de una raza específica
+  /// Obtener imágenes de una raza específica
+  /// [breedId] - El ID de la raza de gato
+  /// [limit] - El número de imágenes a obtener (por defecto 10)
   Future<List<CatImage>> getBreedImages(String breedId,
       {int limit = 10}) async {
     try {
@@ -58,7 +60,8 @@ class CatApiService {
     }
   }
 
-  // Obtener una imagen aleatoria de una raza específica
+  /// Obtener una imagen aleatoria de una raza específica
+  /// [breedId] - El ID de la raza de gato
   Future<CatImage?> getRandomBreedImage(String breedId) async {
     try {
       final response = await _httpService.get(

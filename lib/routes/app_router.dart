@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../constants/routes.dart';
+import 'routes.dart';
 import '../modules/main/main_view.dart';
 import '../modules/splash/splash_view.dart';
 import '../modules/main/home/home_view.dart';

@@ -53,7 +53,6 @@ class _MainViewState extends State<MainView> {
             _selectedIndex = index;
           });
         },
-        // Deshabilitar el swipe del PageView para evitar interferencia con el CardSwiper
         physics: const NeverScrollableScrollPhysics(),
         children: _pages,
       ),

@@ -12,14 +12,12 @@ class CatProvider extends ChangeNotifier {
   bool _isLoading = false;
   String? _error;
 
-  // Getters
   List<CatBreed> get breeds => _breeds;
   List<CatImage> get breedImages => _breedImages;
   CatBreed? get selectedBreed => _selectedBreed;
   bool get isLoading => _isLoading;
   String? get error => _error;
 
-  // Inicializar el servicio
   void initialize() {
     _catApiService.initialize();
   }

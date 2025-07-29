@@ -413,7 +413,9 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
             ),
           ),
 
-          // Nombre de la raza al top
+          //*******************************************************
+          //* Nombre de la raza al top
+          //*******************************************************
           Positioned(
             top: 20,
             left: 20,
@@ -440,7 +442,9 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
             ),
           ),
 
-          // Botones de votación al bottom
+          //*******************************************************
+          //* Botones de votación al bottom
+          //*******************************************************
           Positioned(
             bottom: 20,
             left: 20,
@@ -450,7 +454,9 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    // "No me gusta"
+                    //*******************************************************
+                    //* "No me gusta"
+                    //*******************************************************
                     _buildVoteButton(
                       isDark: isDark,
                       isLike: false,
@@ -459,7 +465,9 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
                       onPressed: () => _onVotationGestur(breed.id, false),
                     ),
 
-                    // "Me gusta"
+                    //*******************************************************
+                    //* "Me gusta"
+                    //*******************************************************
                     _buildVoteButton(
                       isDark: isDark,
                       isLike: true,
@@ -550,7 +558,7 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
                           Colors.red.shade600.withValues(alpha: 0.8)
                         ]),
         ),
-        borderRadius: BorderRadius.circular(50), // Completamente redondo
+        borderRadius: BorderRadius.circular(50),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.2),
@@ -565,13 +573,7 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
           borderRadius: BorderRadius.circular(50), // Completamente redondo
           onTap: isDisabled ? null : onPressed,
           child: Container(
-            padding: const EdgeInsets.all(
-                20), // Padding uniforme para forma circular
-            // child: Icon(
-            //   isLike ? Icons.thumb_up : Icons.thumb_down,
-            //   color: Colors.white,
-            //   size: 28, // Icono ligeramente más grande para mejor proporción
-            // ),
+            padding: const EdgeInsets.all(20),
             child: Image.asset(
               isLike
                   ? 'assets/images/me_gusta.png'
