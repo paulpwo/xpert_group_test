@@ -19,7 +19,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _animationController = AnimationController(
-      duration: const Duration(seconds: 1),
+      duration: const Duration(seconds: 5),
       vsync: this,
     );
 
