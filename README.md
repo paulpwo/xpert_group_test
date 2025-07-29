@@ -4,13 +4,29 @@ Aplicación de prueba para el cargo de Desarrollador FullStack Flutter y Java en
 
 ## Capturas de pantalla
 
-![Captura de pantalla 1](screenshots/1.png)
-![Captura de pantalla 2](screenshots/2.png)
-![Captura de pantalla 3](screenshots/3.png)
-![Captura de pantalla 4](screenshots/4.png)
-![Captura de pantalla 5](screenshots/5.png)
-![Captura de pantalla 6](screenshots/6.png)
-![Captura de pantalla 7](screenshots/7.png)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/1.png" alt="Captura de pantalla 1" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/2.png" alt="Captura de pantalla 2" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/3.png" alt="Captura de pantalla 3" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/4.png" alt="Captura de pantalla 4" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/5.png" alt="Captura de pantalla 5" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/6.png" alt="Captura de pantalla 6" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <img src="screenshots/7.png" alt="Captura de pantalla 7" style="width: 100%; height: auto;">
+  </div>
+</div>
 
 ## Enlace a la apk
 
