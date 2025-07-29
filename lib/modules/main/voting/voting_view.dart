@@ -567,10 +567,17 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
           child: Container(
             padding: const EdgeInsets.all(
                 20), // Padding uniforme para forma circular
-            child: Icon(
-              isLike ? Icons.thumb_up : Icons.thumb_down,
-              color: Colors.white,
-              size: 28, // Icono ligeramente más grande para mejor proporción
+            // child: Icon(
+            //   isLike ? Icons.thumb_up : Icons.thumb_down,
+            //   color: Colors.white,
+            //   size: 28, // Icono ligeramente más grande para mejor proporción
+            // ),
+            child: Image.asset(
+              isLike
+                  ? 'assets/images/me_gusta.png'
+                  : 'assets/images/no_me_gusta.png',
+              width: 28,
+              height: 28,
             ),
           ),
         ),
