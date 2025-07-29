@@ -13,6 +13,10 @@ class AppRoutes {
   static const String help = '/help';
   static const String about = '/about';
 
+  // Rutas de WebView
+  static const String privacyPolicy = '/privacy-policy';
+  static const String helpSupport = '/help-support';
+
   // Rutas de autenticación (para futuras expansiones)
   static const String login = '/login';
   static const String register = '/register';
