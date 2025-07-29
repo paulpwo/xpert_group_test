@@ -18,6 +18,10 @@ Aplicación de prueba para el cargo de Desarrollador FullStack Flutter y Java en
 2. Ejecutar `flutter pub get`
 3. Ejecutar `flutter run`
 
+## Compilar Android para pruebas
+
+1. Ejecutar `flutter build apk --target-platform android-arm,android-arm64,android-x64 --shrink`
+
 ## Licencia
 
 [MIT](https://opensource.org/licenses/MIT)
