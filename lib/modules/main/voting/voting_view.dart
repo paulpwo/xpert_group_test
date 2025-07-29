@@ -16,7 +16,6 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
   List<CatBreed> _breedsToVote = [];
   // true = like, false = dislike, null = no vote
   Map<String, bool?> votesMap = {};
-  int _currentIndex = 0;
   late AnimationController _fadeController;
   late Animation<double> _fadeAnimation;
 
@@ -140,7 +139,7 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
               ),
               const SizedBox(width: 12),
               Text(
-                'Votación de Razas',
+                'Vota por tus razas favoritas',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -206,12 +205,8 @@ class _VotingViewState extends State<VotingView> with TickerProviderStateMixin {
       controller: _cardSwiperController,
       cardsCount: _breedsToVote.length,
       onSwipe: (previousIndex, currentIndex, direction) {
-        setState(() {
-          _currentIndex = currentIndex ?? 0;
-        });
-
         // Voto basado en la dirección del swipe
-        if (previousIndex != null && previousIndex < _breedsToVote.length) {
+        if (previousIndex < _breedsToVote.length) {
           final breed = _breedsToVote[previousIndex];
           bool isLike = false;
 
